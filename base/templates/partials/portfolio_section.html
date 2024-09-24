@@ -1,0 +1,14 @@
+<section class="portfolio section" id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+
+    <div class="portfolio__container bd-grid">
+        {% for project in portfolio %}
+        <div class="portfolio__img">
+            <img src="{{ project.image.url }}" alt="">
+            <div class="portfolio__link">
+                <a href="{{ project.link }}" class="portfolio__link-name" target="_blank">View Project</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
